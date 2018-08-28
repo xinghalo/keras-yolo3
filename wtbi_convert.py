@@ -18,7 +18,7 @@ for line in lines:
     if line[0] not in labels:
         labels[line[0]] = []
 
-    labels[line[0]].append(','.join(np.array(line[1:-1], dtype='str')))
+    labels[line[0]].append(','.join(np.array(list(map(int,map(float,line[1:-1]))), dtype='str')))
 
 
 
