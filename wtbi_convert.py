@@ -25,3 +25,7 @@ for line in lines:
 with open('/Users/xingoo/PycharmProjects/keras-yolo3/model_data/label_yolo.txt','w') as f:
     for label in labels:
         f.write(label+' '+(' '.join(labels[label]))+'\n')
+
+with open('/Users/xingoo/PycharmProjects/keras-yolo3/model_data/label_classes.txt','w') as f:
+    for cls in classes:
+        f.write(cls+'\n')
